@@ -1,13 +1,93 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>ResponsiveCardSwiper</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
 </head>
+<style>
+  .main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efefef;
+}
+.container{
+    max-width: 1120px; 
+    width: 100%;
+    /* background-color: gray; */
+    padding: 30px 0;
+}
+.slide-container{
+    margin: 0 30px;
+    overflow: hidden;
+}
+.card .img-box{
+    height: 200px;
+}
+.card .img-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+}
+.card .profile-details img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.card{
+    width: 313px;
+    background-color: white;
+    border-radius:8px;
+    margin-right: 10px;
+}
+.card .profile-details .name{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card .profile-details .job{
+    font-size: 12px;
+    font-weight: 400;
+    color: #4d4d4d;
+}
+.swiper-navBtn{
+    color: black;
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after
+{
+    font-size: 18px;
+}
+@media screen and (max-width:768px) {
+    .swiper-navBtn{
+        display: none;
+    }
+}
+</style>
+
 <body>
-  <app-root></app-root>
+  <app-root></app-root> 
+     <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <!-- <script src="src/app/script.js"></script> -->
 </body>
+
 </html>
